@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes logo left and nav right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#1f2937;
+    /* Adjust as needed */
+}
+
+#logo img {
+    width: 56px;
+    height: 56px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* Makes the links horizontal */
+}
+
+nav ul li {
+    margin: 0 10px;
+    /* Adds space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    /* Adjust color as needed */
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-family: 'monserrat', sans-serif, 'Times New Roman', ;
+    font-size: 16px;
+}
+nav ul li a:hover {
+    color: #d8b4fe;
+    /* Adjust color as needed */
+}
+#container {
+   size: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centers the images */
+}
+
+/* from here we are going to create main part */
+
+/* this part you should remove when you displaying something insted of we will update soon */
+
+
+
+
+main {
+    display: flex;              /* to make the content in the center */
+    justify-content: center;              /* to center the content*/
+    align-items: center;              /*to center the content*/
+    height: 100vh;              /*to make the content full height*/
+}
+
+main h1 {
+    text-align: center;               /*   to center the text*/
+    margin: 20px 0;                /*to give space between the text and the border*/
+    color:#ffd433;                 /*to give color to the text*/
+    width: 100%;                   /*to make the text full width*/
+    font-style: italic;
+    font-family: "dancing script"'Times New Roman', Times, serif;
+}footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:' monserrat', sans-serif, 'Times New Roman', ;
+    font-size: 13px; /* Adjust font size as needed */
+}
+hr {
+    border: 1px rgba(255, 255, 255, 0.601) solid;
+    width: calc(100% - 40px); /* 20px short from both sides */
+    margin: 0 20px;
+}
