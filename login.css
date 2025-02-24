@@ -1,0 +1,106 @@
+/* Centers the container and applies a background image */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('path/to/your/new-A2.jpg') no-repeat center center/cover; /* Update this line */
+    font-family: Arial, sans-serif;
+}
+
+/* Main container for the sign-up/sign-in box */
+.container {
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: auto; /* Adjust height to content */
+    margin: auto 0; /* Center vertically */
+}
+
+/* Heading style */
+h2 {
+    color: #3e1a8c;
+    margin-bottom: 20px;
+}
+
+/* Wrap each input + icon in a relative container */
+.input-container {
+    position: relative;
+    margin: 10px 0; /* spacing around each input group */
+}
+
+/* The icon inside the input container */
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #3e1a8c;
+}
+
+/* The input field itself */
+.input-field {
+    width: 100%;
+    box-sizing: border-box;   /* prevents overflow */
+    padding: 10px;
+    padding-left: 35px;       /* leaves space for the icon */
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Style for the 'Lost password?' text */
+.forgot-password {
+    font-size: 12px;
+    color: black;
+}
+
+.forgot-password a {
+    color: #3e1a8c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contains the Sign Up / Sign In buttons side by side */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Base style for buttons */
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Active (primary) button style */
+button.active {
+    background: #3e1a8c;
+    color: white;
+}
+
+button.active:hover {
+    background: #2e0f6c;
+}
+
+/* Inactive (secondary) button style */
+button:not(.active) {
+    background: #d3d3d3;
+    color: black;
+}
+
+button:not(.active):hover {
+    background: #b3b3b3;
+}
+
+/* Hidden class toggles display off */
+.hidden {
+    display: none;
+}
